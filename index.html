@@ -8,7 +8,7 @@
 		$.ajax({
   			url: "/ajax.html",
 		  	success: function( result ) {
-    			$( "#ajax-contents" ).html( result );
+    			$( "#ajax-contents" ).append( result );
   			}
 		});
 		
