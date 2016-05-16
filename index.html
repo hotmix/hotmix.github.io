@@ -1,8 +1,15 @@
 <html>
 <head>
-
+<script type="text/javascript">
+	function addPtag(){
+		var target = document.getElementById('ajax-contents');
+		target.appendChild('<p>Pタグ追加</p>');
+	}
+</script>
 </head>
 <body>
 <h1>hello!world</h1>
+<div id="ajax-contents"></div>
+<button onclick="addPtag">add ptag</button>
 </body>
 </html>
