@@ -8,6 +8,7 @@
 		$.ajax({
   			url: "/ajax.html",
 		  	success: function( result ) {
+		  		$(result).hidden();
     			$( "#ajax-contents" ).append( result ).fadeIn();
   			}
 		});
