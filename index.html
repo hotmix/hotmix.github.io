@@ -6,7 +6,7 @@
 		console.log('onclick');
 		
 		$.ajax({
-  			url: "/ajax.html",
+  			url: "https://aed.azure-mobile.net/api/nearaed?lat=35.96&lng=136.185&r=300",
 		  	success: function( result ) {
     			$( "#ajax-contents" ).append( result );
   			}
