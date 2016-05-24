@@ -7,10 +7,13 @@
 		
 		$.ajax({
   			url: "https://aed.azure-mobile.net/api/nearaed?lat=35.96&lng=136.185&r=300",
-  			crossDomain: true,
-  			cache: false,
-  			dataType: 'jsonp',
+ 
 		  	success: function( result ) {
+		  		console.log(result);
+    			$( "#ajax-contents" ).append( result );
+  			},
+  			complete: function (result){
+  				console.log(result);
     			$( "#ajax-contents" ).append( result );
   			}
 		});
