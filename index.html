@@ -7,8 +7,6 @@
 <script src="site.js"></script>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript">
-<<<<<<< HEAD
-
 </script>
 </head>
 <body>
@@ -132,37 +130,10 @@ function addPtag(){
 		  		
 		  		console.log(data);
 		  		
-=======
-	function addPtag(){
-		console.log('onclick');
-
-		$.ajax({
-  			url: "https://aed.azure-mobile.net/api/nearaed?lat=35.96&lng=136.185&r=300",
-
-		  	success: function( result ) {
-		  		console.log(result);
-    			$( "#ajax-contents" ).append( result );
-  			},
-  			complete: function (result){
-  				console.log(result);
-    			$( "#ajax-contents" ).append( result );
->>>>>>> 4c7536615b1f60bbd79399e708ae42451e532df4
   			}
 		});
 
 	}
-<<<<<<< HEAD
-=======
-</script>
-</head>
-<body>
-<h1>AED API</h1>
-<div id="ajax-contents"></div>
-<button type="button" onClick="addPtag()">add ptag</button>
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=11&center=34.0703%2C134.5548&key=AIzaSyD99HpIhEMRrjAGXwufXgIr6ja4JpgcGOM" allowfullscreen></iframe> 
-
->>>>>>> 4c7536615b1f60bbd79399e708ae42451e532df4
-
 </script>
 <script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWjKZHEVi8D-AEbiBMvYSe3FYnNaVy66c&callback=initMap">
